@@ -28,11 +28,11 @@ from torch.nn import functional as F
 # model config
 @dataclass
 class GPTConfig:
-    block_size: int = 64      # max context length (how far back a token can attend)
+    block_size: int = 64      # max context length
     vocab_size: int = 65      # number of distinct tokens; set from the dataset
     n_layer: int = 4          # number of stacked Transformer blocks
     n_head: int = 4           # number of attention heads per block
-    n_embd: int = 128         # width of the residual stream / embeddings
+    n_embd: int = 128         # width of the residual stream/embeddings
     dropout: float = 0.1
 
 
